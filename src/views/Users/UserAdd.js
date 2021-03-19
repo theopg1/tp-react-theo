@@ -39,7 +39,7 @@ export default class UserAdd extends Component{
                            onChange={(e) => this.handleChange(e)}/>
                 </div>
                 <div className="form-group">
-                    <label>Nom</label>
+                    <label>Téléphone</label>
                     <input type="text" id="phone" className="form-control" required
                         onChange={(e) => this.handleChange(e)}/>
                 </div>

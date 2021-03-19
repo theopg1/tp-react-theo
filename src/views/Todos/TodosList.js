@@ -22,7 +22,7 @@ export default class TodosList extends Component{
         let {todos} = this.state;
         return <div className="container">
             <h1>Liste des Tâches</h1>
-            <Link className="btn btn-primary" to="/articles/ajouter">Ajouter une Tâche</Link>
+            <Link className="btn btn-primary" to="/taches/ajouter">Ajouter une Tâche</Link>
             <div className="row">
                 {todos.map(todo => {
                     return <div className="col-md-4">

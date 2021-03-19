@@ -23,9 +23,10 @@ export default class UserDetails extends Component{
     render() {
         let {user} = this.state;
         return <div className="container">
-            <h1>{user.name}</h1>
+            <h1>Username : {user.name}</h1>
             <p>Email : {user.email}</p>
             <p>Tel : {user.phone}</p>
+            <p>Nombre de Tâches : {user.nbrTodos}</p>
             <button className="btn btn-danger" onClick={() => this.handleDelete(user.id)}>Supprimer</button>
         </div>
     }

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import TodoService from "../../services/todo.service";
+import {Link} from "react-router-dom";
 
 export default class TodoDetails extends Component{
 
@@ -26,9 +27,10 @@ export default class TodoDetails extends Component{
         let {todo} = this.state;
         return <div className="container">
             <h1>Tâches - {todo.title}</h1>
-            <h2>Contenu</h2>
-            <p>{todo.completed}</p>
+            <p>Complétée : {todo.completed}</p>
+            <p>User : {todo.userId}</p>
             <button className="btn btn-danger" onClick={() => this.handleDelete()}>Supprimer</button>
+            <Link to={`/taches/${todo.id}/modifier`} className="btn btn-warning">Modifier</Link>
         </div>
     }
 }

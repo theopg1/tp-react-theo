@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
 
 export default class Footer extends Component{
 
@@ -9,7 +8,7 @@ export default class Footer extends Component{
             <p>nom du client</p>
             <p>nom de l'application</p>
             <p>réseaux sociaux</p>
-        </div>
+            </div>
         </nav>
     }
 }

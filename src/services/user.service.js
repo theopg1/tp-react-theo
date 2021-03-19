@@ -4,7 +4,6 @@ const baseUrl = "https://jsonplaceholder.typicode.com";
 export class UserService{
 
     /**
-     * List of users
      * @returns {Promise<AxiosResponse<any>>}
      */
     static async list(){
@@ -20,7 +19,6 @@ export class UserService{
     }
 
     /**
-     * Details of user
      * @param id
      * @returns {Promise<AxiosResponse<any>>}
      */
@@ -29,7 +27,6 @@ export class UserService{
     }
 
     /**
-     * Create user
      * @param data
      * @returns {Promise<AxiosResponse<any>>}
      */
@@ -38,7 +35,6 @@ export class UserService{
     }
 
     /**
-     * Update one user
      * @param id
      * @param data
      * @returns {Promise<AxiosResponse<any>>}
@@ -48,7 +44,6 @@ export class UserService{
     }
 
     /**
-     * Delete one user
      * @param id
      * @returns {Promise<AxiosResponse<any>>}
      */
